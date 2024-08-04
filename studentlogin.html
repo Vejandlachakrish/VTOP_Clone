@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="CTOP" />
+    <meta name="discription" content="welcom to the CTOP" />
+    <title>VIT-AP-VTOP</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="studentlogin.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="captcha.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script src="studentlogin.js"></script>
+  </head>
+  <body onload="generate()">
+    <div class="navbar">
+      <img
+        src="images/img1.png"
+        alt="img1"
+        height="35"
+        width="120"
+        id="header"
+      />
+    </div>
+
+    <div class="bg-text">
+      <div class="navbar3">
+        <p>VTOP Login</p>
+      </div>
+      <form action="student.html">
+        <div class="input-container">
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Username"
+            name="usrnm"
+          />
+          <i class="fa fa-user icon" style="font-size: 8px; color: #0072c9"></i>
+        </div>
+        <div class="input-container">
+          <input
+            class="input-field"
+            type="password"
+            placeholder="Password"
+            name="psw"
+            type="password"
+            value="FakePSW"
+            id="myInput"
+          />
+          <i
+            class="fa fa-eye icon"
+            style="font-size: 8px; cursor: pointer"
+            type="checkbox"
+            onclick="myFunction()"
+          ></i>
+        </div>
+
+        <div id="image" class="inline1" selectable="False"></div>
+        <div class="inline2" onclick="generate()">
+          <i class="fas fa-sync" style="font-size: 8px; cursor: pointer"></i>
+        </div>
+        <input type="text" id="submit" placeholder="Enter CAPTCHA show above" />
+
+        <input
+          type="submit"
+          style="cursor: pointer"
+          id="btn"
+          onclick="printmsg()"
+        />
+
+        <p id="key"></p>
+        <div class="navbar4">
+          <div class="a2">
+            <a href="index.html" style="font-size: 10px; color: #0072c9"
+              >Forgot Password</a
+            >
+            <br />
+            <a href="index.html" style="font-size: 10px; color: #0072c9"
+              >Forgot LoginId</a
+            >
+          </div>
+          <div class="a1">
+            <a href="index.html" style="font-size: 10px; color: rgb(0, 150, 0)"
+              >Go to Home Page</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="navbar1">
+      <p>
+        Copyright © 2024 Software Development Cell, VIT-AP University, Andhra
+        Pradesh-522241.
+      </p>
+    </div>
+  </body>
+</html>

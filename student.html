@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="CTOP" />
+    <meta name="discription" content="welcom to the CTOP" />
+    <title>VIT-AP-VTOP</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="student.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="student.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <button onclick="toggleNav()">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </button>
+      <img src="images/img1.png" alt="img1" id="header" />
+      <a href="studentlogin.html">
+        <button style="font-size: 12px; color: white">
+          <i class="fas fa-home"></i>
+        </button>
+      </a>
+
+      <a href="studentlogin.html">
+        <button style="font-size: 12px; color: white">
+          <i class="far fa-star"></i>
+        </button>
+      </a>
+    </div>
+    <div class="sidebar">
+      <ul style="height: 490px">
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fa fa-phone-square"
+              style="font-size: 10px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="#"
+              ><i class="fa fa-phone-square" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Contact Us</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i class="fa fa-briefcase" style="font-size: 9.5px" id="icon"></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">My Info</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Profile</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Credentials</a
+            >
+            <a href="#"
+              ><i class="fa fa-university" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Virtual Account Number</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Acknowledgement view</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Student Bank Info</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; My Scholarships</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fas fa-info-circle"
+              style="font-size: 9px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Info Corner</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; FAQ</a
+            >
+            <a href="#"
+              ><i class="fa fa-info-circle" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Biometric Log</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; General
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fas fa-paw"
+              style="font-size: 9px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Mentor</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Mentor Details</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Mentor Message
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fa fa-book"
+              style="font-size: 9.5px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Course Enrollment</div>
+            <a href="#"
+              ><i class="fa fa-info-circle" style="font-size: 9px"></i>
+              &nbsp;&nbsp; EXC Registration</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; MOOC Registration</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; WishList</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Course Withdraw
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="fas fa-graduation-cap" style="font-size: 9px" id="icon"></i>
+          <div
+            id="dropdownContent"
+            class="dropdown-content"
+            style="transform: translateY(-18%)"
+          >
+            <div class="subnav">Academics</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; HOD and Dean Info</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Facility Info</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Course Feedback 24x7</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Biometric Info
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Class Messages
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Regulation
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; My Curriculam
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Minor/Honour
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Time Table
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Class Attendence
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Course Page
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Industrial Internship
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Project
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Digital Assignment Upload
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; QCM View
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; SET Conference Registration
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Co-Extra Curricular
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Academics Calander
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Registration Schedule & Allocation
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Project Course
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; ECS Regestration
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; ECS Review Marks
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; INC Registration
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Mooc Course Registration
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Capstone Regestration
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Capstone Acceptance Status
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Capstone Review Marks
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; SDP Registraion
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; SDP Review Marks
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; SDP Acceptance Status
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Summer Internship
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i class="fa fa-university" style="font-size: 9.5px" id="icon"></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Research</div>
+            <a href="#"
+              ><i class="fa fa-info-circle" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Invigilation Duty Selection & View</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; My Research Profile</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; SEM Request</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Course Work Registration
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Registraion Status
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Meeting info
+            </a>
+            <a href="#"
+              ><i class="fas fa-hourglass-end" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Biometric Attendence Info
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Reasearch Std Leave Request
+            </a>
+            <a href="#"
+              ><i class="fas fa-file-alt" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Research Letter
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Electronic ThesisSubmission
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Research Doucument Upload
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i
+            class="fa fa-book"
+            style="font-size: 9.5px; padding-left: 1px"
+            id="icon"
+          ></i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Examination</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Exam Schedule</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Marks</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Grades</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Paper See/Rev
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Grade History
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Project File Upload
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; MOOC File upload
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; ECA File Upload
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; EPT schedule
+            </a>
+            <a href="#"
+              ><i
+                class="fa fa-dot-circle-o"
+                style="font-size: 9px; font-weight: bold"
+              ></i>
+              &nbsp;&nbsp; Comprehensive
+            </a>
+            <a href="#"
+              ><i
+                class="fa fa-dot-circle-o"
+                style="font-size: 9px; font-weight: bold"
+              ></i>
+              &nbsp;&nbsp; Arrear/ReFAT Details
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Re-Exam Application
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i class="fa fa-university" style="font-size: 9.5px" id="icon"></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Library</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Online Book Recommendation</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <i
+            class="fas fa-fighter-jet"
+            style="font-size: 8px; padding-left: 1px"
+            id="icon"
+          ></i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Services</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Facility Registration</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Transport Registration</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; PAT Registraion</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Upload Offer Letter
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Transcript Request
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Financial Assignment Scholarship
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Achievements
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Programme Migration
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Late Hour Request
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Final Year Registraion
+            </a>
+            <a href="#"
+              ><i
+                class="fa fa-dot-circle-o"
+                style="font-size: 9px; font-weight: bold"
+              ></i>
+              &nbsp;&nbsp; SAP Application
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Certificate Upload
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; eSanad Request
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fas fa-certificate"
+              style="font-size: 8.5px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Bonifide</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Apply Bonafide</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Apply Demand Letter
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="far fa-money-bill-alt"
+              style="font-size: 9px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Online Payments</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Payments</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Payments Receipts
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Fees Intimation</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Online Transfer
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fas fa-home"
+              style="font-size: 8.5px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Hostels</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Weekend Outing</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; General Outing
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Hostel Room Info 2023-24</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; NCGPA RANK View 2023-24
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; NCGPA Hostel Booking 2023-24
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fa fa-book"
+              style="font-size: 9.5px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">ASC FDP</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; FDP Registration</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Participant Certificate
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fa fa-shield"
+              style="font-size: 9.5px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">Events</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; SixSigma Certificate</a
+            >
+            <a href="#"
+              ><i
+                class="fa fa-dot-circle-o"
+                style="font-size: 9px; font-weight: bold"
+              ></i>
+              &nbsp;&nbsp; University Day
+            </a>
+            <a href="#"
+              ><i
+                class="fas fa-graduation-cap"
+                style="font-size: 9px; font-weight: bold"
+              ></i>
+              &nbsp;&nbsp; Convocation
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i class="fa fa-trophy" style="font-size: 10px" id="icon"></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">SW Events</div>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Club/Chapter Enrollment</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Event Requisition
+            </a>
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Event Attendence</a
+            >
+            <a href="#"
+              ><i class="fa fa-dot-circle-o" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Event Regestration
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="more-btn">
+            <i
+              class="fa fa-lock"
+              style="font-size: 10px; padding-left: 1px"
+              id="icon"
+            ></i>
+          </i>
+          <div id="dropdownContent" class="dropdown-content">
+            <div class="subnav">My Account</div>
+            <a href="#"
+              ><i class="fa fa-lock" style="font-size: 9px"></i> &nbsp;&nbsp;
+              Change Password</a
+            >
+            <a href="#"
+              ><i class="fa fa-lock" style="font-size: 9px"></i>
+              &nbsp;&nbsp; Update LoginID
+            </a>
+          </div>
+        </div>
+      </ul>
+      <div class="bg-text">
+        <h6
+          style="
+            color: black;
+            font-family: Calibri light;
+            font-weight: bold;
+            font-size: 19px;
+            margin-top: 0%;
+            margin-left: 0.8%;
+            padding: 0%;
+            margin-bottom: 0%;
+          "
+        >
+          Spotlight
+        </h6>
+        <hr
+          style="margin-top: 0%; color: rgb(221, 221, 221); margin-bottom: 0%"
+        />
+        <button
+          class="notification"
+          id="btn"
+          onclick="openNav1()"
+          style="
+            font-size: 10px;
+            font-family: Calibri;
+            color: black;
+            font-weight: 550;
+            margin-bottom: 0%;
+            width: 3.2%;
+          "
+        >
+          Events
+          <span class="badge">2</span>
+        </button>
+        <br />
+        <a
+          href="https://viteee.vit.ac.in/"
+          target="_blank"
+          style="
+            color: black;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: normal;
+            margin-bottom: 0%;
+            padding: auto;
+          "
+          ><i
+            class="fa fa-bolt"
+            style="font-size: 10px; color: #740f34; margin-left: 2.5%"
+          ></i
+          >&nbsp;&nbsp; VITEEE - 2024 Apply Online</a
+        >
+        <hr
+          style="
+            color: rgb(166, 166, 166);
+            margin-top: 0%;
+            margin-left: 10px;
+            width: 98.5%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+          "
+        />
+        <a
+          href="https://vit.ac.in/files/VITEEE-2024-information-brochure.pdf"
+          target="_blank"
+          style="
+            color: black;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: normal;
+            margin-top: 0%;
+            padding-top: 0%;
+          "
+          ><i
+            class="fa fa-bolt"
+            style="
+              font-size: 10px;
+              color: #740f34;
+              margin-left: 2.5%;
+              margin-bottom: 0%;
+              padding-bottom: 0%;
+            "
+          ></i
+          >&nbsp;&nbsp; VITEEE - 2024 Information Brochure</a
+        >
+        <br />
+        <button
+          class="notification"
+          onclick="openNav2()"
+          id="btn"
+          style="
+            font-size: 10px;
+            font-family: Calibri;
+            color: black;
+            font-weight: 550;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            width: 30px;
+          "
+        >
+          COE
+          <span class="badge">1</span>
+        </button>
+        <br />
+        <a
+          href="https://vtop.vitap.ac.in/onlineexam/"
+          target="_blank"
+          style="
+            color: black;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: normal;
+            margin-top: 0%;
+            padding-top: 0%;
+          "
+          ><i
+            class="fa fa-bolt"
+            style="
+              font-size: 10px;
+              color: #740f34;
+              margin-left: 2.5%;
+              margin-bottom: 0%;
+              padding-bottom: 15px;
+            "
+          ></i
+          >&nbsp;&nbsp; Student Online Quiz URL 1 / Online Assessment Link 1</a
+        >
+        <hr
+          style="
+            color: rgb(166, 166, 166);
+            margin-top: 0%;
+            margin-left: 10px;
+            width: 98.5%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+          "
+        />
+        <a
+          href="https://vtop.vitap.ac.in/onlineexam/"
+          target="_blank"
+          style="
+            color: black;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: normal;
+            margin-top: 0%;
+            padding-top: 0%;
+            margin: 0%;
+          "
+          ><i
+            class="fa fa-bolt"
+            style="
+              font-size: 10px;
+              color: #740f34;
+              margin-left: 2.5%;
+              margin-bottom: 0%;
+              padding-bottom: 0%;
+            "
+          ></i
+          >&nbsp;&nbsp; Student Online Quiz URL 2 / Online Assessment Link 2</a
+        >
+        <br />
+        <button
+          class="notification"
+          onclick="openNav3()"
+          id="btn"
+          style="
+            font-size: 10px;
+            font-family: Calibri;
+            color: black;
+            font-weight: 550;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            width: auto;
+          "
+        >
+          Academic Research
+          <span class="badge">1</span>
+        </button>
+        <br />
+        <a
+          href="https://vitap.ac.in/ug-pg-admissions-2024/"
+          target="_blank"
+          style="
+            color: black;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: normal;
+            margin-top: 0%;
+            padding-top: 0%;
+          "
+          ><i
+            class="fa fa-bolt"
+            style="
+              font-size: 10px;
+              color: #740f34;
+              margin-left: 2.5%;
+              margin-bottom: 0%;
+              padding-bottom: 15px;
+            "
+          ></i
+          >&nbsp;&nbsp; VIT-AP UG & PG Admissions 2024 – Apply Online</a
+        >
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <div class="menunav">
+        <p>VTOP Menu</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()"
+          ><i class="fa fa-bars" style="font-size: 13px"></i
+        ></a>
+      </div>
+    </div>
+    <div class="greyOverlay"></div>
+    <div id="mySidenav1" class="sidenav1">
+      <div class="eventnav">
+        <a
+          style="
+            margin: 0px;
+            color: #3488db;
+            font-family: calibri;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 14px;
+          "
+        >
+          SPOTLIGHT :
+          <span
+            style="
+              margin: 0px;
+              color: #c93d3d;
+              font-family: calibri;
+              font-weight: bold;
+              padding-top: 5px;
+              font-size: 14px;
+            "
+            >Events</span
+          >
+        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()"
+          ><i class="fa fa-bars" style="font-size: 13px"></i
+        ></a>
+      </div>
+      <a
+        href="https://viteee.vit.ac.in/"
+        target="_blank"
+        style="
+          color: black;
+          text-decoration: none;
+          font-size: 9px;
+          font-weight: normal;
+          margin-bottom: 0%;
+          padding-left: 15px;
+          padding: auto;
+        "
+        ><i
+          class="fa fa-bolt"
+          style="font-size: 10px; color: #740f34; margin-left: 2.5%"
+        ></i
+        >&nbsp;&nbsp; VITEEE - 2024 Apply Online</a
+      >
+      <hr
+        style="
+          color: rgb(166, 166, 166);
+          margin-top: 0%;
+          margin-left: 10px;
+          width: 98.5%;
+          margin-bottom: 0%;
+          padding-bottom: 0%;
+        "
+      />
+      <a
+        href="https://vit.ac.in/files/VITEEE-2024-information-brochure.pdf"
+        target="_blank"
+        style="
+          color: black;
+          text-decoration: none;
+          font-size: 9px;
+          font-weight: normal;
+          margin-top: 0%;
+          padding-top: 0%;
+          padding-left: 15px;
+        "
+        ><i
+          class="fa fa-bolt"
+          style="
+            font-size: 10px;
+            color: #740f34;
+            margin-left: 2.5%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+          "
+        ></i
+        >&nbsp;&nbsp; VITEEE - 2024 Information Brochure</a
+      >
+    </div>
+    <div id="mySidenav2" class="sidenav2">
+      <div class="COEnav">
+        <a
+          style="
+            margin: 0px;
+            color: #3488db;
+            font-family: calibri;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 14px;
+          "
+        >
+          SPOTLIGHT :
+          <span
+            style="
+              margin: 0px;
+              color: #c93d3d;
+              font-family: calibri;
+              font-weight: bold;
+              padding-top: 5px;
+              font-size: 14px;
+            "
+            >COE</span
+          >
+        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
+          ><i class="fa fa-bars" style="font-size: 13px"></i
+        ></a>
+      </div>
+      <a
+        href="https://vtop.vitap.ac.in/onlineexam/"
+        target="_blank"
+        style="
+          color: black;
+          text-decoration: none;
+          font-size: 9px;
+          font-weight: normal;
+          margin-bottom: 0%;
+          padding-left: 15px;
+          padding: auto;
+        "
+        ><i
+          class="fa fa-bolt"
+          style="font-size: 10px; color: #740f34; margin-left: 2.5%"
+        ></i
+        >&nbsp;&nbsp; Student Online Quiz URL 1 / Online
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Assessment Link 1</a
+      >
+      <hr
+        style="
+          color: rgb(166, 166, 166);
+          margin-top: 0%;
+          margin-left: 10px;
+          width: 98.5%;
+          margin-bottom: 0%;
+          padding-bottom: 0%;
+        "
+      />
+      <a
+        href="https://vtop.vitap.ac.in/onlineexam/"
+        target="_blank"
+        style="
+          color: black;
+          text-decoration: none;
+          font-size: 9px;
+          font-weight: normal;
+          margin-top: 0%;
+          padding-top: 0%;
+          padding-left: 15px;
+        "
+        ><i
+          class="fa fa-bolt"
+          style="
+            font-size: 10px;
+            color: #740f34;
+            margin-left: 2.5%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+          "
+        ></i
+        >&nbsp;&nbsp; Student Online Quiz URL 2 / Online
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Assessment Link 2</a
+      >
+    </div>
+    <div id="mySidenav3" class="sidenav3">
+      <div class="Academicnav">
+        <a
+          style="
+            margin: 0px;
+            color: #3488db;
+            font-family: calibri;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 14px;
+          "
+        >
+          SPOTLIGHT :
+          <span
+            style="
+              margin: 0px;
+              color: #c93d3d;
+              font-family: calibri;
+              font-weight: bold;
+              padding-top: 5px;
+              font-size: 14px;
+            "
+            >Academic Research</span
+          >
+        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()"
+          ><i class="fa fa-bars" style="font-size: 13px"></i
+        ></a>
+      </div>
+      <a
+        href="https://vitap.ac.in/ug-pg-admissions-2024/"
+        target="_blank"
+        style="
+          color: black;
+          text-decoration: none;
+          font-size: 9px;
+          font-weight: normal;
+          margin-top: 0%;
+          padding-top: 0%;
+          padding-left: 15px;
+        "
+        ><i
+          class="fa fa-bolt"
+          style="
+            font-size: 10px;
+            color: #740f34;
+            margin-left: 2.5%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+          "
+        ></i
+        >&nbsp;&nbsp; VIT-AP UG & PG Admissions 2024 –
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apply
+        Online</a
+      >
+    </div>
+  </body>
+</html>
